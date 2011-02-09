@@ -1,0 +1,2 @@
+module Rubymmer
+end
