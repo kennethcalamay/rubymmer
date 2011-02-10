@@ -1,0 +1,3 @@
+class Yammer
+  include Mongoid::Document
+end
