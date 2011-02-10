@@ -19,7 +19,7 @@ module Rubymmer
 
     doc = Hpricot.parse(response)
     (doc/ :response/ :messages/ :message).each do |msg|
-      urls << msg.search("/url").first.children.first.raw_string
+      urls << msg.search("/web-url").first.children.first.raw_string
     end
     urls
   end

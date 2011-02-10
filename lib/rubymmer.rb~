@@ -21,6 +21,7 @@ module Rubymmer
     (doc/ :response/ :messages/ :message).each do |msg|
       urls << msg.search("/url").first.children.first.raw_string
     end
+    urls
   end
 
   def all
