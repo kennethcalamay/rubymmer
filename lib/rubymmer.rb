@@ -15,6 +15,10 @@ module Rubymmer
   end
 
   def parse_response(response)
+    Hash.from_xml response
+  end
+
+  def parse_response1(response)
     urls = []
 
     doc = Hpricot.parse(response)
