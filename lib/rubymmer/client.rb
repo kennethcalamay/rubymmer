@@ -41,7 +41,7 @@ module Rubymmer
     end
 
 private
-    
+
     def create_access_token(verifier = nil)
       if(verifier)
         @access_token = request_token.get_access_token(:oauth_verifier => verifier)
